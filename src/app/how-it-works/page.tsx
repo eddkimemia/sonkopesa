@@ -237,10 +237,10 @@ export default function HowItWorksPage() {
                       <h3 className="font-heading font-bold text-2xl text-lux-navy">Step 3: Earn M-Pesa Commissions</h3>
                     </div>
                     <p className="text-lux-text-light leading-relaxed mb-3">
-                      This is where the magic happens. Every time someone joins SonkoPesa using your referral link, you earn <strong className="text-lux-gold-dark">KES 200</strong> directly to your M-Pesa account. But that is just the beginning. You also earn  for every person referred by someone on your team \u2014 these are called override commissions.
+                      This is where the magic happens. Every time someone joins SonkoPesa using your referral link, you earn <strong className="text-lux-gold-dark">KES 200</strong> directly to your M-Pesa account — single level, no overrides.
                     </p>
                     <p className="text-lux-text-light leading-relaxed mb-4">
-                      Here is how the compounding effect works in real life: Refer 10 people directly and earn <strong className="text-lux-gold-dark">KES 3,500</strong>. If each of those 10 people refers just 5 people each, that is 50 people in your extended network, earning you  each in override commissions \u2014 that is <strong className="text-lux-gold-dark">KES 7,500</strong> more. Your total is now <strong className="text-lux-gold-dark">KES 11,000</strong> from just 10 direct referrals. This is the power of team building. Your income grows exponentially as your network grows, creating true passive income Kenya that keeps paying you month after month.
+                      Simple math: Refer <strong className="text-lux-gold-dark">3 people = KES 600</strong> (already profit), <strong className="text-lux-gold-dark">10 people = KES 2,000</strong>, <strong className="text-lux-gold-dark">25 people = KES 5,000</strong>. Every referral is tracked and paid instantly — what you refer is what you earn.
                     </p>
                     <div className="flex flex-wrap gap-3">
                       <Badge className="bg-lux-gold-pale text-lux-navy border border-lux-gold/20 font-semibold text-sm px-4 py-1.5">
