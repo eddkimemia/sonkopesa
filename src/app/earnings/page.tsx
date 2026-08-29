@@ -38,7 +38,7 @@ const comparisonRows = [
   { label: "Payment Speed", zuri: "Instant M-Pesa", side: "Weekly/monthly", emp: "Monthly" },
   { label: "Skills Required", zuri: "None (just sharing)", side: "Sales/marketing", emp: "Qualifications" },
   { label: "Growth Potential", zuri: "Linear & scalable", side: "Linear (your effort)", emp: "Promotion-based" },
-  { label: "Passive Income", zuri: "Direct only (no upline)", side: "Rarely", emp: "No" },
+  { label: "Passive Income", zuri: "Single Level", side: "Rarely", emp: "No" },
 ]
 
 const faqData = [
@@ -189,8 +189,8 @@ export default function EarningsPage() {
               <FadeIn delay={200}>
                 <Card className="border-0 shadow-md card-lift bg-sky-50 border-l-4" style={{ borderLeftColor: "#0284C7" }}>
                   <CardContent className="p-5">
-                    <h4 className="font-heading font-bold text-lux-navy">Single Level • No Upline • 100% Transparent</h4>
-                    <p className="text-sm text-lux-text-light mt-1">We removed the 150 KES upline commission to keep earnings simple: you earn only from people YOU directly refer. No complex team calculations, no waiting for downstream referrals.</p>
+                    <h4 className="font-heading font-bold text-lux-navy">Single Level • 100% Transparent</h4>
+                    <p className="text-sm text-lux-text-light mt-1">Earnings are simple: you earn only from people YOU directly refer. No complex calculations, no hidden levels.</p>
                   </CardContent>
                 </Card>
               </FadeIn>
@@ -238,10 +238,10 @@ export default function EarningsPage() {
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white">
                         <Zap className="h-5 w-5 text-lux-gold-dark" />
                       </div>
-                      <h3 className="font-heading font-bold text-lg text-lux-navy">Why No Upline?</h3>
+                      <h3 className="font-heading font-bold text-lg text-lux-navy">Simple Single Level</h3>
                     </div>
                     <p className="text-lux-text leading-relaxed">
-                      We keep it simple and fair: you earn KES 200 only for people YOU bring in. No 150 KES override, no second-level confusion. This means every shilling you see is directly tied to YOUR effort — transparent, instant, and easy to track on your dashboard.
+                      We keep it simple and fair: you earn KES 200 only for people YOU bring in. No second-level or hidden fees. Every shilling you see is directly tied to YOUR effort — transparent, instant, and easy to track on your dashboard.
                     </p>
                     <div className="mt-4 p-3 bg-white rounded-lg border border-sky-100">
                       <p className="text-sm font-medium text-lux-gold-dark">Simple math: 5 referrals = KES 1,000 • 20 referrals = KES 4,000</p>
@@ -466,7 +466,7 @@ export default function EarningsPage() {
               </table>
             </div>
             <p className="text-center text-sm text-lux-text-light mt-4">
-              * Single level - KES 200 per direct referral. No upline override.
+              * Single level - KES 200 per direct referral.
             </p>
           </FadeInScale>
         </div>
