@@ -1,0 +1,408 @@
+▲ Next.js 16.2.12 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://172.28.208.1:3000
+- Environments: .env
+✓ Ready in 4.4s
+
+○ Compiling / ...
+ GET / 200 in 62s (next.js: 60s, application-code: 1909ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+ GET /how-it-works 200 in 4.0s (next.js: 3.7s, application-code: 341ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 203ms (next.js: 50ms, application-code: 153ms)
+ GET / 200 in 4.4s (next.js: 35ms, application-code: 4.4s)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+○ Compiling /admin ...
+ GET /admin 200 in 54s (next.js: 50s, application-code: 3.4s)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+○ Compiling /api/auth/[...nextauth] ...
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error decryption operation failed {
+  message: 'decryption operation failed',
+  stack: 'JWEDecryptionFailed: decryption operation failed\n' +
+    '    at gcmDecrypt (webpack-internal:///(rsc)/./node_modules/jose/dist/node/cjs/runtime/decrypt.js:67:15)\n' +
+    '    at decrypt (webpack-internal:///(rsc)/./node_modules/jose/dist/node/cjs/runtime/decrypt.js:92:20)\n' +
+    '    at flattenedDecrypt (webpack-internal:///(rsc)/./node_modules/jose/dist/node/cjs/jwe/flattened/decrypt.js:143:52)\n' +
+    '    at async compactDecrypt (webpack-internal:///(rsc)/./node_modules/jose/dist/node/cjs/jwe/compact/decrypt.js:18:23)\n' +
+    '    at async jwtDecrypt (webpack-internal:///(rsc)/./node_modules/jose/dist/node/cjs/jwt/decrypt.js:8:23)\n' +
+    '    at async Object.decode (webpack-internal:///(rsc)/./node_modules/next-auth/jwt/index.js:56:7)\n' +
+    '    at async Object.session (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/session.js:48:28)\n' +
+    '    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:136:27)\n' +
+    '    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n' +
+    '    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n' +
+    '    at async AppRouteRouteModule.do (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40255)\n' +
+    '    at async AppRouteRouteModule.handle (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47535)\n' +
+    '    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:251:38)\n' +
+    '    at async AppRouteRouteModule.handleResponse (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:229068)\n' +
+    '    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:314:32)\n' +
+    '    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CEDWIN%5CDownloads%5Caurerious&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:369:13)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n' +
+    '    at async DevServer.renderPageComponent (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n' +
+    '    at async DevServer.renderToResponseImpl (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n' +
+    '    at async DevServer.pipeImpl (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n' +
+    '    at async DevServer.handleRequestImpl (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n' +
+    '    at async C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n' +
+    '    at async Span.traceAsyncFn (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n' +
+    '    at async DevServer.handleRequest (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n' +
+    '    at async invokeRender (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n' +
+    '    at async handleRequest (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n' +
+    '    at async requestHandlerImpl (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n' +
+    '    at async Server.requestListener (C:\\Users\\EDWIN\\Downloads\\aurerious\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)',
+  name: 'JWEDecryptionFailed'
+}
+ GET /api/auth/session 200 in 34.0s (next.js: 33.6s, application-code: 348ms)
+○ Compiling /admin/login ...
+ GET /admin/login 200 in 9.5s (next.js: 9.0s, application-code: 523ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /api/auth/session 200 in 749ms (next.js: 595ms, application-code: 154ms)
+ GET /api/auth/session 200 in 193ms (next.js: 16ms, application-code: 176ms)
+ GET /api/auth/session 200 in 55ms (next.js: 24ms, application-code: 31ms)
+ GET /api/auth/providers 200 in 103ms (next.js: 27ms, application-code: 76ms)
+ GET /api/auth/csrf 200 in 110ms (next.js: 15ms, application-code: 94ms)
+ POST /api/auth/callback/credentials 200 in 1333ms (next.js: 14ms, application-code: 1319ms)
+ GET /api/auth/session 200 in 59ms (next.js: 9ms, application-code: 50ms)
+ GET /admin 200 in 671ms (next.js: 64ms, application-code: 607ms)
+○ Compiling /api/admin/overview ...
+ GET /api/auth/session 200 in 20.4s (next.js: 19.8s, application-code: 583ms)
+ GET /api/admin/overview 200 in 910ms (next.js: 30ms, application-code: 880ms)
+ GET /api/admin/overview 200 in 21.4s (next.js: 19.9s, application-code: 1559ms)
+○ Compiling /admin/users ...
+ GET /admin/users 200 in 15.3s (next.js: 14.4s, application-code: 946ms)
+○ Compiling /api/admin/users ...
+ GET /api/auth/session 200 in 11.9s (next.js: 11.7s, application-code: 218ms)
+ GET /api/admin/users?page=1&limit=20 200 in 12.1s (next.js: 11.9s, application-code: 276ms)
+ GET /api/admin/users?page=1&limit=20 200 in 244ms (next.js: 48ms, application-code: 196ms)
+ DELETE /api/admin/users 200 in 197ms (next.js: 11ms, application-code: 186ms)
+ GET /api/admin/users?page=1&limit=20 200 in 347ms (next.js: 45ms, application-code: 302ms)
+ DELETE /api/admin/users 200 in 84ms (next.js: 5ms, application-code: 78ms)
+ GET /api/admin/users?page=1&limit=20 200 in 242ms (next.js: 10ms, application-code: 232ms)
+ GET /admin 200 in 926ms (next.js: 404ms, application-code: 522ms)
+ GET /api/admin/overview 200 in 281ms (next.js: 13ms, application-code: 268ms)
+ GET /api/auth/session 200 in 318ms (next.js: 125ms, application-code: 193ms)
+ GET /api/admin/overview 200 in 113ms (next.js: 9ms, application-code: 104ms)
+○ Compiling /admin/settings ...
+ GET /admin/settings 200 in 66s (next.js: 65s, application-code: 908ms)
+○ Compiling /api/auth/[...nextauth] ...
+ GET /api/auth/session 200 in 11.8s (next.js: 11.3s, application-code: 462ms)
+ GET /api/admin/settings 200 in 13.0s (next.js: 12.2s, application-code: 743ms)
+ GET /api/admin/settings 200 in 36ms (next.js: 8ms, application-code: 28ms)
+ PUT /api/admin/settings 200 in 740ms (next.js: 8ms, application-code: 733ms)
+ GET /api/auth/csrf 200 in 69ms (next.js: 46ms, application-code: 23ms)
+ POST /api/auth/signout 200 in 118ms (next.js: 4ms, application-code: 114ms)
+ GET /admin/login 200 in 2.4s (next.js: 420ms, application-code: 1987ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+ GET /api/auth/session 200 in 134ms (next.js: 31ms, application-code: 102ms)
+ GET /api/auth/session 200 in 48ms (next.js: 7ms, application-code: 41ms)
+○ Compiling /login ...
+ GET /admin/login 200 in 810ms (next.js: 130ms, application-code: 679ms)
+ GET /login 200 in 21.8s (next.js: 18.4s, application-code: 3.4s)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+○ Compiling /register ...
+ GET /register 200 in 9.4s (next.js: 8.8s, application-code: 545ms)
+ GET /register 200 in 220ms (next.js: 7ms, application-code: 213ms)
+ GET /register 200 in 4.5s (next.js: 21ms, application-code: 4.5s)
+ GET /login 200 in 1018ms (next.js: 110ms, application-code: 908ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/register" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="__variable_246ccd __variable_c29908 antialiased bg-background text-foreground f..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+ GET /login 200 in 138ms (next.js: 11ms, application-code: 128ms)
+ GET /register 200 in 218ms (next.js: 7ms, application-code: 211ms)
+ GET /register 200 in 370ms (next.js: 10ms, application-code: 360ms)
+ GET /login 200 in 207ms (next.js: 20ms, application-code: 187ms)
+ GET /register 200 in 457ms (next.js: 23ms, application-code: 434ms)
+ GET /login 200 in 327ms (next.js: 27ms, application-code: 300ms)
+ GET /register 200 in 447ms (next.js: 21ms, application-code: 426ms)
+ GET /login 200 in 252ms (next.js: 9ms, application-code: 243ms)
+ GET /register 200 in 165ms (next.js: 20ms, application-code: 146ms)
+ GET /login 200 in 157ms (next.js: 13ms, application-code: 144ms)
+ GET /register 200 in 149ms (next.js: 10ms, application-code: 139ms)
+ GET /login 200 in 155ms (next.js: 8ms, application-code: 148ms)
+ GET /register 200 in 328ms (next.js: 11ms, application-code: 317ms)
+ GET /login 200 in 164ms (next.js: 11ms, application-code: 154ms)
+ GET /register 200 in 186ms (next.js: 9ms, application-code: 176ms)
+ GET /login 200 in 163ms (next.js: 13ms, application-code: 150ms)
+ GET /register 200 in 140ms (next.js: 10ms, application-code: 131ms)
+ GET /login 200 in 141ms (next.js: 7ms, application-code: 134ms)
+ GET /register 200 in 394ms (next.js: 11ms, application-code: 383ms)
+ GET /login 200 in 173ms (next.js: 13ms, application-code: 159ms)
+ GET /login 200 in 143ms (next.js: 10ms, application-code: 133ms)
+ GET /register 200 in 155ms (next.js: 13ms, application-code: 142ms)
+ GET /register 200 in 307ms (next.js: 9ms, application-code: 298ms)
+ GET /login 200 in 174ms (next.js: 14ms, application-code: 159ms)
+ GET /login 200 in 315ms (next.js: 9ms, application-code: 306ms)
+ GET /register 200 in 183ms (next.js: 17ms, application-code: 166ms)
+ GET /login 200 in 131ms (next.js: 10ms, application-code: 121ms)
+ GET /register 200 in 178ms (next.js: 7ms, application-code: 172ms)
+ GET /login 200 in 139ms (next.js: 9ms, application-code: 130ms)
+ GET /register 200 in 142ms (next.js: 7ms, application-code: 135ms)
+ GET /register 200 in 127ms (next.js: 11ms, application-code: 116ms)
+ GET /login 200 in 139ms (next.js: 10ms, application-code: 129ms)
+ GET /register 200 in 165ms (next.js: 9ms, application-code: 156ms)
+ GET /login 200 in 115ms (next.js: 6ms, application-code: 109ms)
+ GET /register 200 in 235ms (next.js: 13ms, application-code: 222ms)
+ GET /login 200 in 134ms (next.js: 7ms, application-code: 126ms)
+ GET /login 200 in 127ms (next.js: 11ms, application-code: 116ms)
+ GET /register 200 in 147ms (next.js: 14ms, application-code: 134ms)
+ GET /login 200 in 176ms (next.js: 18ms, application-code: 158ms)
+ GET /register 200 in 131ms (next.js: 8ms, application-code: 123ms)
+ GET /register 200 in 371ms (next.js: 15ms, application-code: 356ms)
+ GET /login 200 in 224ms (next.js: 17ms, application-code: 207ms)
+ GET /login 200 in 314ms (next.js: 13ms, application-code: 301ms)
+ GET /register 200 in 178ms (next.js: 16ms, application-code: 162ms)
+ GET /login 200 in 882ms (next.js: 585ms, application-code: 297ms)
+ GET /register 200 in 265ms (next.js: 50ms, application-code: 215ms)
+ GET /register 200 in 919ms (next.js: 665ms, application-code: 254ms)
+ GET /login 200 in 220ms (next.js: 42ms, application-code: 177ms)
+ GET /register 200 in 469ms (next.js: 230ms, application-code: 239ms)
+ GET /login 200 in 226ms (next.js: 53ms, application-code: 174ms)
+ GET /login 200 in 615ms (next.js: 222ms, application-code: 393ms)
+ GET /register 200 in 227ms (next.js: 59ms, application-code: 168ms)
+ GET /register 200 in 722ms (next.js: 231ms, application-code: 491ms)
+ GET /login 200 in 293ms (next.js: 61ms, application-code: 233ms)
+ GET /register 200 in 206ms (next.js: 11ms, application-code: 195ms)
+ GET /login 200 in 168ms (next.js: 8ms, application-code: 160ms)
+ GET /register 200 in 462ms (next.js: 12ms, application-code: 450ms)
+ GET /login 200 in 323ms (next.js: 14ms, application-code: 309ms)
+ GET /login 200 in 219ms (next.js: 11ms, application-code: 208ms)
+ GET /register 200 in 148ms (next.js: 7ms, application-code: 141ms)
+ GET /register 200 in 350ms (next.js: 10ms, application-code: 340ms)
+ GET /login 200 in 171ms (next.js: 7ms, application-code: 164ms)
+ GET /register 200 in 172ms (next.js: 14ms, application-code: 158ms)
+ GET /login 200 in 184ms (next.js: 9ms, application-code: 175ms)
+ GET /login 200 in 341ms (next.js: 12ms, application-code: 329ms)
+ GET /register 200 in 214ms (next.js: 11ms, application-code: 203ms)
+ GET /register 200 in 136ms (next.js: 10ms, application-code: 126ms)
+ GET /login 200 in 598ms (next.js: 11ms, application-code: 588ms)
+ GET /register 200 in 133ms (next.js: 10ms, application-code: 123ms)
+ GET /login 200 in 137ms (next.js: 7ms, application-code: 130ms)
