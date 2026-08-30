@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/heror.jpg",
-        width: 1200,
-        height: 630,
+        width: 1254,
+        height: 1254,
         alt: "SonkoPesa - Premium Referral Platform - Earn KES 200 Per Referral + KES 200 bonus",
       },
     ],
