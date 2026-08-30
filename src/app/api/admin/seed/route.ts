@@ -4,13 +4,20 @@ import bcrypt from "bcryptjs"
 import { generateReferralCode } from "@/lib/utils"
 
 // POST /api/admin/seed?secret=YOUR_SECRET
-// Secret must match SEED_SECRET env or fallback to admin password check
+// Secret must match SEED_SECRET env or fallback to NEXTAUTH_SECRET
+// If no admin exists, allow unauthenticated init for first deploy (fixes Vercel Invalid credentials)
 export async function POST(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get("secret")
   const expected = process.env.SEED_SECRET || process.env.NEXTAUTH_SECRET
-  if (!secret || secret !== expected) {
-    // also allow if no secret set, check for admin auth via header? For now require secret
-    return NextResponse.json({ error: "Unauthorized - invalid secret" }, { status: 401 })
+
+  // Allow unauthenticated seed if no admin exists yet (first deploy)
+  let adminExists = false
+  try {
+    adminExists = (await db.user.count({ where: { role: "admin" } })) > 0
+  } catch {}
+  const isSecretValid = secret && expected && secret === expected
+  if (adminExists && !isSecretValid) {
+    return NextResponse.json({ error: "Unauthorized - invalid secret. Use ?secret=NEXTAUTH_SECRET" }, { status: 401 })
   }
 
   try {
